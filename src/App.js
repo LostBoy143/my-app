@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CarSearchComponent from "./components/CarSearchComponent";
+import WhyChooseUs from "./components/WhyChooseUs";
+import HowTo from "./components/HowTo";
+import Slider from "./components/Slider";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="lg:p-5">
+      <CarSearchComponent />
+      <WhyChooseUs />
+      <Slider />
+      <HowTo />
     </div>
   );
 }
