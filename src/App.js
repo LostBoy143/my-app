@@ -8,6 +8,7 @@ import WhyRideWithUs from "./components/Ride";
 import FAQ from "./components/Faq";
 import Stats from "./components/Stats";
 import CitiesAvailable from "./components/Cities";
+import TrendingOffers from "./components/Offers";
 function App() {
   return (
     <div className="lg:p-5">
@@ -15,7 +16,7 @@ function App() {
       <WhyChooseUs />
       <Slider />
       <HowTo /> */}
-      <div className="h-2/3 bg-slate-500"></div>
+      <TrendingOffers />
       <BenifitsSection />
       <WhyRideWithUs />
       <FAQ />
