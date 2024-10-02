@@ -1,3 +1,5 @@
+//updated code
+
 import React, { useState } from "react";
 import Slider from "react-slick";
 
@@ -70,19 +72,18 @@ const TrendingOffers = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false, // Set infinite to false to stop after the last slide
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false, // Disable the default arrows as we'll use custom buttons
+    arrows: false, // Disable default arrows for custom buttons
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+          infinite: false, // Keep infinite false for smaller breakpoints as well
         },
       },
       {
@@ -90,6 +91,7 @@ const TrendingOffers = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: false, // Ensure it remains non-infinite
         },
       },
     ],
@@ -101,7 +103,7 @@ const TrendingOffers = () => {
       : monthlyOffers;
 
   return (
-    <div className="relative px-4 py-8 my-6">
+    <div className="relative px-4 py-8">
       <h2 className="text-3xl font-semibold text-center mb-8">
         Trending Offers
       </h2>
@@ -151,7 +153,7 @@ const TrendingOffers = () => {
                 <img
                   src={offer.image}
                   alt={offer.discount}
-                  className="w-full h-48 bg-cover"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
                   <h3 className="text-xl font-bold">

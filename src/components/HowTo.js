@@ -36,14 +36,18 @@ export default function HowTo() {
   }, []);
 
   return (
-    <div className="bg-gray-100 p-3 flex flex-col items-center mt-3">
-      <h1 className="text-center text-gray-700 text-2xl lg:text-4xl mb-8 mt-3 font-bold">
-        How to start your ride
-      </h1>
+    <div className="bg-gray-100 p-3 flex flex-col items-center mt-6">
+      <h2 className="text-3xl font-bold text-center text-indigo-900 mb-4">
+        How To Book a Self-Drive Car Online
+      </h2>
+      <p className="text-center text-gray-500 mb-6">
+        Book a car online in Jaipur from MyChoize
+        in 4 Simple steps.
+      </p>
       <img
         src={url}
         alt="how-to-img"
-        className="lg:w-3/4 w-4/5 lg:min-h-full"
+        className="lg:w-3/4 w-4/5 lg:min-h-full mb-12"
       />
     </div>
   );
